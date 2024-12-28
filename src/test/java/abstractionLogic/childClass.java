@@ -11,7 +11,7 @@ public childClass()
     }
     @Override
     public void Method2(String str) {
-        System.out.println("From childClass Method 3: -"+str);
+        System.out.println("From childClass Method 2: -"+str);
     }
 
     @Override

@@ -6,7 +6,7 @@ public class baseClass {
         abs.Method1();
         abs.Method2("firstString",13,"secondString");
         abs.directMethod();
-        abs.Method2("method3");
+        abs.Method2("method2");
         abs.Method4("Stringdata", 10);
         abs.directMethod2("directMethod");
     }
