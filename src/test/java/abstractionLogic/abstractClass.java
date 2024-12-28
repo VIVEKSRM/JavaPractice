@@ -1,7 +1,7 @@
 package abstractionLogic;
 
 //we can create abstract class as public and default
-abstract public class abstractClass {
+ public abstract class abstractClass {
     public abstractClass()
     {
         System.out.println("From abstractClass Constructor Called");
