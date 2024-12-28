@@ -10,7 +10,7 @@ public childClass()
         { System.out.println("From childClass Method 1"); }
     }
     @Override
-    public void Method3(String str) {
+    public void Method2(String str) {
         System.out.println("From childClass Method 3: -"+str);
     }
 

@@ -7,7 +7,12 @@ public class childClassInterface implements interfaceExample {
     }
 
     @Override
-    public void method2() {
+    public void method2(String str, int i) {
+
+    }
+
+    @Override
+    public void method3(String str, int i, int r) {
 
     }
 

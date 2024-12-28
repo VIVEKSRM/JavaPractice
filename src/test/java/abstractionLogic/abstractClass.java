@@ -8,7 +8,7 @@ abstract public class abstractClass {
     }
     abstract public void Method1();
     abstract public void Method2(String str, int i, String str2);
-    abstract public void Method3(String str);
+    abstract public void Method2(String str);
     abstract public void Method4(String str, Integer i);
 
     public void directMethod()
