@@ -1,15 +1,6 @@
 package interfaceLogic;
 
-public class childClassInterface implements interface2 {
-    @Override
-    public void method1() {
-    System.out.println("Calling from method 1");
-    }
-
-    @Override
-    public void method3(String str, int i) {
-        System.out.println("Calling from method 2 :-"+str+" int :- "+i);
-    }
+public class childClassInterface extends secondChildClass {
 
     @Override
     public void method3(String str, int i, int r) {
