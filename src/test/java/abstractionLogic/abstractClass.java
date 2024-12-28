@@ -2,6 +2,10 @@ package abstractionLogic;
 
 //we can create abstract class as public and default
 abstract public class abstractClass {
+    public abstractClass()
+    {
+        System.out.println("From abstractClass Constructor Called");
+    }
     abstract public void Method1();
     abstract public void Method2(String str, int i, String str2);
     abstract public void Method3(String str);
