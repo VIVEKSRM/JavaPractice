@@ -1,9 +1,5 @@
 package javaPracticle;
 
-import org.w3c.dom.ls.LSOutput;
-
-import javax.xml.transform.Source;
-import java.sql.SQLOutput;
 import java.util.*;
 public class numberIsPrimeOrNot {
     public static void main(String[] arg) {
