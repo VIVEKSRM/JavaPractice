@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 
-public class javaPracticle {
+public class removeDuplicateFromArrayList {
 
     @Test
     public void RemoveDuplicateFromArrayList()
@@ -32,5 +32,6 @@ public class javaPracticle {
         HashSet<Integer> hs=new HashSet<>(arr);
         System.out.println(hs);
     }
+
 
 }
