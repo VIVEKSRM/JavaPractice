@@ -25,7 +25,6 @@ public class FindLargeCapsString {
                 smallCapsCount++;
             }
         }
-
         System.out.println("Total Small caps Numbers :-"+smallCapsCount);
         System.out.println(" Below are Characters :- "+smallArr);
         System.out.println("Total Large caps Numbers :-"+largeCapsCount);
