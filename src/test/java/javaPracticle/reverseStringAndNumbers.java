@@ -2,7 +2,9 @@ package javaPracticle;
 
 import org.testng.annotations.Test;
 
-public class reverseAString {
+import java.util.Scanner;
+
+public class reverseStringAndNumbers {
     @Test
     public void ReverseAString() {
         String finalString = "";
@@ -39,6 +41,24 @@ public class reverseAString {
         for(int k=str.length()-1; k>=0; k--)
             finalString=finalString+str.charAt(k);
         System.out.println("Reverse of a String with charAt fn():- "+finalString);
+
+    }
+
+
+    public static void main(String[] arg)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number for reverse: -");
+        int num =sc.nextInt();
+        sc.close();
+        int reverse=0;
+        while(num!=0)
+        {
+            reverse = reverse*10;
+            reverse=reverse+num%10;
+            num=num/10;
+        }
+        System.out.print(reverse);
 
     }
 

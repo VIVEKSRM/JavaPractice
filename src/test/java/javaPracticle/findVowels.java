@@ -1,5 +1,7 @@
 package javaPracticle;
 
+import org.apache.maven.shared.utils.StringUtils;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.HashSet;
@@ -19,5 +21,13 @@ public class findVowels {
                     hs.add(ch[i]);
                 }
         System.out.println(hs);
+    }
+
+    @Test
+    public void AssertTest() {
+        String str = "test";
+        System.out.println(StringUtils.isNumeric(str));
+        Assert.assertTrue(str.equalsIgnoreCase("test"), "in assertTrue");
+        Assert.assertFalse(str.equalsIgnoreCase("test1"), "in assertFalse");
     }
 }
