@@ -7,8 +7,8 @@ public class recursiveFn {
         System.out.println("Sum recursion :-"+result); // recursive Sum method
         System.out.println(" Factorial :- "+factorial(10));
 
-        //recursiveFn rf=new recursiveFn();
-        System.out.println(checkAge(45));
+        recursiveFn rf=new recursiveFn();
+        System.out.println(rf.checkAge(13));
     }
     public static int sum(int k) {
         if (k > 0) {
@@ -29,7 +29,7 @@ public class recursiveFn {
         }
     }
 
-    static boolean checkAge(int age) {
+    public boolean checkAge(int age) {
         boolean flag=true;
         if (age < 18) {
             flag=false;
