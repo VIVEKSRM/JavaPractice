@@ -17,7 +17,7 @@ public class convertListToArrays {
         ArrayList<String> ar = new ArrayList<>(Arrays.asList(str));
         ArrayList<Integer> arI = new ArrayList<>(Arrays.asList(arr));
 
-        //use of stream
+        //use of stream - Lambda Expression
         System.out.println("Use of Stream function:- ");
         arI.stream().forEach((i)-> {System.out.println(i);});
         ar.stream().forEach((i) -> {
