@@ -17,9 +17,17 @@ public class convertListToArrays {
         ArrayList<String> ar = new ArrayList<>(Arrays.asList(str));
         ArrayList<Integer> arI = new ArrayList<>(Arrays.asList(arr));
 
+        //use of stream
+        System.out.println("Use of Stream function:- ");
+        arI.stream().forEach((i)-> {System.out.println(i);});
+        ar.stream().forEach((i) -> {
+            System.out.println(i);
+        });
+
        //We can Use Collections methods also to add
         Collections.addAll(arI, arr);
         Collections.addAll(ar, str);
+        ar.addAll(Arrays.asList(str));
 
         // We can use for loop also to add the data
         for (Integer i: arr)
