@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellType;
@@ -24,7 +25,7 @@ public class excelReader {
 		ArrayList<String> a=new ArrayList<String>();
 
 		FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\Project_Planing.xlsx");
-		System.out.println(System.getProperty("user.dir")+"\\src\\test\\resources\\Project_Planing.xlsx");
+		System.out.println("File Path: -"+System.getProperty("user.dir")+"\\src\\test\\resources\\Project_Planing.xlsx");
 		XSSFWorkbook workbook=new XSSFWorkbook(fis);
 
 		int sheets=workbook.getNumberOfSheets();
@@ -42,7 +43,7 @@ public class excelReader {
 				while(ce.hasNext())
 				{
 					Cell value=ce.next();
-					if(value.getStringCellValue().equalsIgnoreCase("HeaderCol4"))
+					if(value.getStringCellValue().equalsIgnoreCase("HeaderCol1"))
 					{
 						coloumn=k;
 					}
@@ -56,7 +57,7 @@ public class excelReader {
 					if(r.getCell(coloumn).getStringCellValue().equalsIgnoreCase(testcaseName))
 					{
 						////after you grab purchase testcase row = pull all the data of that row and feed into test
-						Iterator<Cell>  cv=r.cellIterator();
+						Iterator<Cell> cv=r.cellIterator();
 						while(cv.hasNext())
 						{
 							Cell c=	cv.next();
@@ -78,7 +79,12 @@ public class excelReader {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		excelReader er=new excelReader();
-		er.getData("row4");
+		ArrayList li=er.getData("row4");
+		//System.out.println(li.get(0));
+		//System.out.println(li.get(1));
+		for (Object i:li) {
+			System.out.println(i.toString());
+		}
 
 	}
 
