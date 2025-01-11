@@ -1,5 +1,7 @@
 package javaPracticle;
 
+import org.testng.annotations.Test;
+
 import java.util.*;
 
 public class ObjectInArrayList {
@@ -53,6 +55,20 @@ public class ObjectInArrayList {
         // passing List object as parameter
         System.out.println(names);
     }
+
+    @Test
+    public void genericArrayListTest()
+    {
+        ArrayList data=new ArrayList<>();
+        data.add(54);
+        data.add("vivek");
+        data.add(12.345);
+        data.add("12/13/05");
+        data.add(25/5); //it will devide the data
+
+        System.out.println(data);
+
+    }
 }
 
 // Class user-defined
@@ -76,4 +92,5 @@ class Person {
         this.id = id;
         this.country = country;
     }
+
 }
