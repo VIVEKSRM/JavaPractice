@@ -35,7 +35,7 @@ public class multiDimentionalArrays {
         //Array 3
         int b[][]={{1,2},{3,4}};
         int u[][]={{1},{3}};
-        int c[][]={{1,2,6,8},{3,4,5,7}};
+        int c[][]={{1,2,6,8},{3,4,5,7},{3,4,5,7}};
         //int d[][][]={{1,2,6,7},{3,4,5,9},{9,8,7,5}};
         for(int i=0; i<c.length; i++)
         {
