@@ -5,4 +5,7 @@ public class classC {
     {
         System.out.println("Calling from classC :- "+str);
     }
+    public static void method2(){
+        System.out.println("Calling from classC Static Method ");
+    }
 }

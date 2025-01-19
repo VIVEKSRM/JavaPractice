@@ -5,4 +5,7 @@ public class classB extends classC{
     {
         System.out.println("Calling from classB:- "+str);
     }
+    public static void method1(){
+        System.out.println("Calling from classB Static Method ");
+    }
 }
