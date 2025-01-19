@@ -19,6 +19,9 @@ package abstractionLogic;
     {
         System.out.println("From abstractClass directMethod:- "+str);
     }
+    public static void staticMethod(){
+        System.out.println("From abstractClass staticMethod");
+    }
 }
 abstract class abstractPublicClass {
     abstract public void Method1();

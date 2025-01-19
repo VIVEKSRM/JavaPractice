@@ -18,7 +18,13 @@ public childClass()
     public void Method4(String str, Integer i) {
         System.out.println("From childClass Method 4: -"+str+" int :- "+i);
     }
+    @Override
     public void directMethod(){
         System.out.println("From childClass directMethod");
+    }
+
+    //Static Method cant be over ride
+    public static void staticMethod(){
+        System.out.println("From childClass staticMethod");
     }
 }
