@@ -3,6 +3,26 @@ package javaPracticle;
 import org.testng.annotations.Test;
 
 public class triangleCodes {
+
+    @Test
+    public void TriangleCOdeTest0(){
+/*
+* * * * *
+* * * *
+* * *
+* *
+*/
+        int number=5;
+        for(int i = 0; i<=number; i++)
+        {
+            for (int j=i+1; j<=number; j++)
+            {
+                System.out.print("* ");
+            }
+            System.out.println("");
+        }
+
+    }
     @Test
     public void triangleCodeTest1()
     {
@@ -70,6 +90,31 @@ public class triangleCodes {
                 System.out.print("* ");
             }
             System.out.println();
+        }
+    }
+
+/*      * * * * *
+         * * * *
+          * * *
+           * *
+            *
+     */
+
+
+    @Test
+    public void invertedTriangle()
+    {
+        int number=5;
+        for(int i = 0; i<=number; i++)
+        {
+            for(int k=i-1; k>=0; k--){
+                System.out.print(" ");
+            }
+
+            for(int j=i+1;j<=number; j++){
+                System.out.print("* ");
+            }
+            System.out.println("");
         }
     }
 }

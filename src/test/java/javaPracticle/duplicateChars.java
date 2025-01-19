@@ -4,7 +4,6 @@ import org.testng.annotations.Test;
 
 public class duplicateChars {
     @Test
-
     public void duplicateCharsInString()
     {
         String str="My name is vivek Ranjan";

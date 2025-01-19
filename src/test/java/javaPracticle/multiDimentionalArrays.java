@@ -6,7 +6,8 @@ public class multiDimentionalArrays {
     @Test
     public void multiDimentionalArraysTest(){
         //Array 1
-        int[][] arr=new int[2][2];
+        //Integer[][] arr=new Integer[2][2];
+        int [][] arr=new int [2][2];
         arr[0][0]=2;
         arr[0][1]=3;
         arr[1][0]=4;
