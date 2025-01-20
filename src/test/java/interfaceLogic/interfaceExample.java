@@ -7,4 +7,5 @@ public interface interfaceExample {
     public void method3(String str,int i);
     public void method3(String str, int i, int r);
     void method3();
+
 }
