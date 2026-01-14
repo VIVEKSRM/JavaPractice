@@ -2,6 +2,7 @@ package javaPracticle;
 
 import java.util.regex.*;
 public class extractNumericAndStringfromText {
+    String str="me name is vivek";
         public static void main(String[] args) {
 // Check if the String is Numeric or not
             String str = "1234573204";
