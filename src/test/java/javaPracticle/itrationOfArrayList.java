@@ -32,5 +32,8 @@ public class itrationOfArrayList {
         // Using For loop
         for(int j=0; j<arr.size(); j++)
             System.out.println(arr.get(j));
+
+        //Using Lamda Expression
+        arr.stream().forEach(n->System.out.println(n));
     }
 }
