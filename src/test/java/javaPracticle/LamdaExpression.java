@@ -1,6 +1,7 @@
 package javaPracticle;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -26,5 +27,10 @@ public class LamdaExpression {
                 .sorted((a, b) -> b.compareTo(a))     // Step 3: sort in descending order
                 .forEachOrdered(n -> System.out.println(n)); // Step 4: print in order
 
+
+// Example three
+        List<String> names = Arrays.asList("Vivek", "Anita", "Rahul");
+        Collections.sort(names, (a, b) -> a.compareTo(b));
+        System.out.println(names);
     }
 }
