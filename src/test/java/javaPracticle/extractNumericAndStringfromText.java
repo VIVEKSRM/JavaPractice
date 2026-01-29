@@ -50,17 +50,19 @@ public class extractNumericAndStringfromText {
             String sample = "Vivek123Ranjan456Test$#%@";
             StringBuilder letters = new StringBuilder();
             StringBuilder numbers = new StringBuilder();
+            StringBuilder specialChars = new StringBuilder();
             for (char ch : sample.toCharArray()) {
                 if (Character.isLetter(ch)) {
                     letters.append(ch);
                 } else if (Character.isDigit(ch)) {
                     numbers.append(ch);
                 } else {
-                    System.out.println("Special Character: " + ch);
+                    specialChars.append(ch);
                 }
             }
             System.out.println("Using Chars-------------");
             System.out.println("Letters: " + letters.toString()); // output : VivekRanjanTest
             System.out.println("Numbers: " + numbers.toString()); // output : 123456
+            System.out.println("Special Character: " + specialChars);
         }
 }
