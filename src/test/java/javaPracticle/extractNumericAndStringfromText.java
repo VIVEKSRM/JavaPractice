@@ -45,5 +45,22 @@ public class extractNumericAndStringfromText {
                     System.out.println(word); // output : Hello world This is Vivek Automation rocks
                 }
             }
+
+//Using Chars
+            String sample = "Vivek123Ranjan456Test$#%@";
+            StringBuilder letters = new StringBuilder();
+            StringBuilder numbers = new StringBuilder();
+            for (char ch : sample.toCharArray()) {
+                if (Character.isLetter(ch)) {
+                    letters.append(ch);
+                } else if (Character.isDigit(ch)) {
+                    numbers.append(ch);
+                } else {
+                    System.out.println("Special Character: " + ch);
+                }
+            }
+            System.out.println("Using Chars-------------");
+            System.out.println("Letters: " + letters.toString()); // output : VivekRanjanTest
+            System.out.println("Numbers: " + numbers.toString()); // output : 123456
         }
 }
