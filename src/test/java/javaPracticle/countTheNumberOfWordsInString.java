@@ -9,7 +9,7 @@ public class countTheNumberOfWordsInString {
     @Test
     public void countTheNumberOfWordsInStringUsingHashMap() {
         String str = "my name is vivek ranjan";
-        String[] split = str.split("");
+        String[] split = str.replaceAll(" ","").split("");
         HashMap<String, Integer> hm = new HashMap<>();
 
         for (int i = 0; i <= split.length-1; i++) {

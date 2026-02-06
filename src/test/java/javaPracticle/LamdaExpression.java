@@ -23,7 +23,7 @@ public class LamdaExpression {
 
         numbers2.stream()
                 .filter(n -> n % 2 == 0)              // Step 1: keep only even numbers
-                .map(n -> n * n)                      // Step 2: square each number
+                .map(n -> n * n)                      // Step 2: square each number .map(String::toUpperCase)
                 .sorted((a, b) -> b.compareTo(a))     // Step 3: sort in descending order
                 .forEachOrdered(n -> System.out.println(n)); // Step 4: print in order
 
