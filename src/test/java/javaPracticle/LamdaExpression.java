@@ -21,6 +21,7 @@ public class LamdaExpression {
 // Example two
         List<Integer> numbers2 = Arrays.asList(1, 2, 3, 4, 5, 6);
 
+        System.out.println("Processing with Stream (unordered):");
         numbers2.stream()
                 .filter(n -> n % 2 == 0)              // Step 1: keep only even numbers
                 .map(n -> n * n)                      // Step 2: square each number .map(name -> name.toUpperCase())
@@ -32,5 +33,7 @@ public class LamdaExpression {
         List<String> names = Arrays.asList("Vivek", "Anita", "Rahul");
         Collections.sort(names, (a, b) -> a.compareTo(b));
         System.out.println(names);
+        Collections.reverse(names);
+        System.out.println("reverse Name :- "+names);
     }
 }

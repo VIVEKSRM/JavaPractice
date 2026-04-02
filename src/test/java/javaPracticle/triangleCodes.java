@@ -15,7 +15,7 @@ public class triangleCodes {
         int number=5;
         for(int i = 0; i<=number; i++)
         {
-            for (int j=i+1; j<=number; j++)
+            for (int j= i + 1; j<=number; j++)
             {
                 System.out.print("* ");
             }
