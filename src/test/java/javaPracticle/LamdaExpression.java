@@ -14,8 +14,8 @@ public class LamdaExpression {
                 .filter(n -> n % 2 == 0)   // keep only even numbers
                 .forEach(n -> System.out.println(n));  // print them
 
-       numbers.stream().filter(n-> n*n==4).forEach(n->System.out.println(n));
-       numbers.stream().forEachOrdered(n->System.out.println(n));
+       numbers.stream().filter(n-> n*n==4).forEach(n->System.out.println(n)); // Order of the stream is not maintained while processing
+       numbers.stream().forEachOrdered(n->System.out.println(n)); // Maintain Order of the stream while processing
 
 
 // Example two
