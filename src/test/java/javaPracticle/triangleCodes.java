@@ -65,6 +65,7 @@ public class triangleCodes {
             }
             System.out.println();
 
+
         }
     }
 
