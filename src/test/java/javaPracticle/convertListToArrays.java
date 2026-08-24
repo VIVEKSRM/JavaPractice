@@ -17,12 +17,19 @@ public class convertListToArrays {
         ArrayList<String> ar = new ArrayList<>(Arrays.asList(str));
         ArrayList<Integer> arI = new ArrayList<>(Arrays.asList(arr));
 
+        // OR
+        ArrayList<Integer> arrTest=new ArrayList<>(Arrays.asList(1,2,3,4,5,6,6));
+
         //use of stream - Lambda Expression
         System.out.println("Use of Stream function:- ");
         arI.stream().forEach((i)-> {System.out.println(i);});
         ar.stream().forEach((i) -> {
             System.out.println(i);
         });
+
+        // Arrays.stream with lambda
+        String[] strArr = {"test1","test2","test3"};
+        Arrays.stream(strArr).forEach(s -> System.out.println(s));
 
        //We can Use Collections methods also to add
         Collections.addAll(arI, arr);

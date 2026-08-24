@@ -43,7 +43,7 @@ public class secondHighestNumberInArray {
         Integer[] i ={1,4,2,8,6,45,55};
         LinkedHashSet<Integer> hs=new LinkedHashSet<>(Arrays.asList(i));
         ArrayList<Integer> arr=new ArrayList<>(hs);
-        Collections.sort(arr);
+        Collections.sort(arr,Collections.reverseOrder());
         System.out.println(" Number is :-"+ arr.get(k));
 
 

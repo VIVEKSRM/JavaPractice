@@ -12,7 +12,7 @@ public class countTheNumberOfWordsInString {
         String[] split = str.replaceAll(" ","").split("");
         HashMap<String, Integer> hm = new HashMap<>();
 
-        for (int i = 0; i <= split.length-1; i++) {
+        for (int i = 0; i < split.length; i++) {
             if (hm.containsKey(split[i])) {
                // Integer count = hm.get(split[i]);
                 hm.put(split[i], hm.get(split[i]) + 1);

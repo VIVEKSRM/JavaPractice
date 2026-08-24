@@ -4,6 +4,9 @@ import java.util.regex.*;
 public class extractNumericAndStringfromText {
     String str="me name is vivek";
         public static void main(String[] args) {
+            //      "\\d+" in regex means “one or more digits”.
+            //      "\\d" → a single digit (0–9).
+            //      "+" → one or more occurrences.
 // Check if the String is Numeric or not
             String str = "1234573204";
             System.out.println("Check if the String is Numeric or not-------------");
@@ -15,7 +18,7 @@ public class extractNumericAndStringfromText {
             for (String str1 : strarr)
                 System.out.println(str1); // output : vivek ranjan test
 // Fetch only Numeric from the text
-            System.out.println("Fetch only String from the text-------------");
+            System.out.println("Fetch only Numeric from the text-------------");
             Pattern pattern = Pattern.compile("\\d+");
             Matcher matcher = pattern.matcher(str);
             while (matcher.find()) {
