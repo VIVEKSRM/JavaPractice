@@ -61,6 +61,7 @@ System.out.println(arr);
 Collections.reverse(arr);
 System.out.println(arr);
 
+
 for(String st :arr)
     {
         System.out.print(st + " ");
