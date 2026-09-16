@@ -24,47 +24,63 @@ public class hashMapCountTheNumberOfWordsInString {
         }
         System.out.println(hm);
 
-    String strMain = "My name is My name is Vivek Ranjan";
-    String[] str2 = strMain.replace(" ", "").toLowerCase().split("");
-    String[] str7 = strMain.toLowerCase().split(" ");
-    LinkedHashMap<String, Integer> empMap = new LinkedHashMap<>();
+        String strMain = "My name is My name is Vivek Ranjan";
+        String[] str2 = strMain.replace(" ", "").toLowerCase().split("");
+        String[] str7 = strMain.toLowerCase().split(" ");
+        LinkedHashMap<String, Integer> empMap = new LinkedHashMap<>();
 
 // empMap.put("Vivek", 10);
 // empMap.put("Rahul", 20);
 // empMap.put("Amit", 30);
 // empMap.put("Raj", 40);
 
-for(int i = 0; i<str7.length; i++)
-    {
-        if (empMap.containsKey(str7[i])) {
-            int count = empMap.get(str7[i]);
-            empMap.put(str7[i], count + 1);
+        for (int i = 0; i < str7.length; i++) {
+            if (empMap.containsKey(str7[i])) {
+                int count = empMap.get(str7[i]);
+                empMap.put(str7[i], count + 1);
 
-        } else {
-            empMap.put(str7[i], 1);
+            } else {
+                empMap.put(str7[i], 1);
+            }
         }
-    }
 
-empMap.entrySet()
+        empMap.entrySet()
                 .stream()
-                .filter(n->n.getKey().startsWith("R"))
-                .filter(n ->n.getKey().endsWith("l"))
-                .forEachOrdered(n->System.out.println(n.getKey()+" "+n.getValue()));
+                .filter(n -> n.getKey().startsWith("R"))
+                .filter(n -> n.getKey().endsWith("l"))
+                .forEachOrdered(n -> System.out.println(n.getKey() + " " + n.getValue()));
 
-empMap.entrySet().stream()
-    .filter(n->n.getValue()==2)
-    .forEach(n->System.out.println(n));
-    ArrayList<String> arr = new ArrayList<>();
-    empMap.entrySet().stream().forEach(n->arr.add(n.getKey()));
+        empMap.entrySet().stream()
+                .filter(n -> n.getValue() == 2)
+                .forEach(n -> System.out.println(n));
+        ArrayList<String> arr = new ArrayList<>();
+        empMap.entrySet().stream().forEach(n -> arr.add(n.getKey()));
 
-System.out.println(arr);
-Collections.reverse(arr);
-System.out.println(arr);
+        System.out.println(arr);
+        Collections.reverse(arr);
+        System.out.println(arr);
 
 
-for(String st :arr)
-    {
-        System.out.print(st + " ");
+        for (String st : arr) {
+            System.out.print(st + " ");
+        }
+
+//=========================================== first non Repetative String
+         strMain = "programming";
+        String[] str1 = strMain.split("");
+
+        HashMap<String, Integer> hm1 = new LinkedHashMap<>();
+
+        for (int i = 0; i < str1.length; i++) {
+
+            if (hm1.containsKey(str1[i])) {
+                int count = hm.get(str1[i]);
+                hm1.put(str1[i], count + 1);
+            } else {
+                hm1.put(str1[i], 1);
+            }
+
+        }
+        hm1.entrySet().stream().filter(n -> n.getValue() < 2).findFirst().ifPresent(n -> System.out.println(n.getKey()));
     }
-}
 }

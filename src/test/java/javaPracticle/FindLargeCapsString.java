@@ -29,5 +29,14 @@ public class FindLargeCapsString {
         System.out.println(" Below are Characters :- "+smallArr);
         System.out.println("Total Large caps Numbers :-"+largeCapsCount);
         System.out.println(" Below are Characters :- "+largeArr);
+
+//==================================== New Other Way=======
+String str1 = "FindLargeCapsStringTest";
+
+for (char ch1 : str1.toCharArray()) {
+    if (Character.isUpperCase(ch1)) {
+        System.out.println(ch1);
+            }
+        }
     }
 }
