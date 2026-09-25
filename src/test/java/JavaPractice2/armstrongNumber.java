@@ -24,6 +24,7 @@ public class armstrongNumber {
 
                 int digit = temp % 10;
 
+
                 int power = 1;
 
                 for (int i = 0; i < digits; i++) {

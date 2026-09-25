@@ -42,6 +42,15 @@ public class reverseStringAndNumbers {
             finalString=finalString+str.charAt(k);
         System.out.println("Reverse of a String with charAt fn():- "+finalString);
 
+//===================================== The Best Way ==========================
+        String input = "Vivek";
+
+        String reversed = new StringBuilder(input)
+                .reverse()
+                .toString();
+
+        System.out.println(reversed);
+
     }
 
 
